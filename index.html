@@ -8,38 +8,33 @@
     :root {
       --primary-color: #007bff;
       --dark-bg: #1c1c1c;
-      --light-bg: #f4f4f4;
-      --text-color: #fff;
-    }
-
-    * {
-      box-sizing: border-box;
+      --light-bg: #f9f9f9;
+      --text-color: #333;
     }
 
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
       background: var(--light-bg);
-      color: #333;
-      line-height: 1.6;
+      color: var(--text-color);
     }
 
     header {
       background: var(--dark-bg);
-      color: var(--text-color);
+      color: white;
       padding: 40px 20px;
       text-align: center;
     }
 
     header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.2em;
+      font-size: 2.8rem;
+      margin: 0;
     }
 
     header p {
       font-size: 1.2rem;
-      opacity: 0.8;
+      margin-top: 10px;
+      opacity: 0.9;
     }
 
     section {
@@ -49,64 +44,46 @@
     }
 
     h2 {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
+      font-size: 1.6rem;
       border-left: 4px solid var(--primary-color);
       padding-left: 10px;
+      margin-bottom: 15px;
     }
 
     ul {
-      list-style-type: none;
+      list-style: none;
       padding-left: 0;
     }
 
-    li {
-      margin: 10px 0;
+    li::before {
+      content: "🔹";
+      margin-right: 8px;
     }
 
     a {
       color: var(--primary-color);
       text-decoration: none;
-      font-weight: 500;
-      position: relative;
-      transition: color 0.3s;
-    }
-
-    a::after {
-      content: '';
-      position: absolute;
-      width: 0%;
-      height: 2px;
-      bottom: -2px;
-      left: 0;
-      background-color: var(--primary-color);
-      transition: width 0.3s;
     }
 
     a:hover {
-      color: #0056b3;
-    }
-
-    a:hover::after {
-      width: 100%;
+      text-decoration: underline;
     }
 
     footer {
       background: var(--dark-bg);
-      color: var(--text-color);
+      color: white;
       text-align: center;
       padding: 20px;
-      margin-top: 50px;
     }
 
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
-
-      section {
-        padding: 20px 15px;
-      }
+    .badge {
+      display: inline-block;
+      background: #e3e3e3;
+      color: #000;
+      padding: 6px 10px;
+      margin: 5px;
+      border-radius: 20px;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -114,35 +91,79 @@
 
   <header>
     <h1>Ishaan Patyal</h1>
-    <p>DevOps & Cloud Enthusiast | Docker · AWS · FastAPI · CI/CD</p>
+    <p>🚀 Passionate CS Student | Aspiring Software Engineer | Tech Enthusiast</p>
   </header>
 
   <section>
-    <h2>About Me</h2>
+    <h2>👨‍💻 About Me</h2>
     <p>
-      I'm a passionate engineer focused on building scalable, cloud-native solutions.
-      I specialize in containerized deployments, infrastructure automation, and
-      modern DevOps pipelines.
+      I am a third-year Computer Science student at <strong>UPES Dehradun</strong> with a keen interest in
+      software development, cloud computing, and DevOps. I’m eager to gain hands-on experience in real-world
+      tech projects, refine my technical skills, and collaborate with like-minded professionals to build impactful solutions.
     </p>
   </section>
 
   <section>
-    <h2>Docker Experiments</h2>
-    <p>These are some hands-on projects using Docker and cloud-native tools:</p>
+    <h2>💡 Skills & Technologies</h2>
+    <div>
+      <span class="badge">Java</span>
+      <span class="badge">JavaScript</span>
+      <span class="badge">Python</span>
+      <span class="badge">C</span>
+      <span class="badge">MySQL</span>
+      <span class="badge">Data Structures & Algorithms</span>
+      <span class="badge">Operating Systems</span>
+      <span class="badge">Computer Networks</span>
+      <span class="badge">AWS</span>
+      <span class="badge">Docker</span>
+      <span class="badge">GitHub Actions</span>
+      <span class="badge">Teamwork</span>
+      <span class="badge">Leadership</span>
+      <span class="badge">Communication</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>🔨 Projects</h2>
     <ul>
-      <li><a href="https://github.com/ishaan575/DOCKER_" target="_blank">Main Docker Repository</a></li>
+      <li><strong>Cloud-Based Health Management App</strong><br />
+        <em>Java, ML (Decision Trees), Secure Data Structures</em><br />
+        A comprehensive platform with symptom checking, medicine tracking, and health profiles.
+      </li>
+      <li><a href="https://github.com/ishaan575/DOCKER_" target="_blank">Docker Projects Repository</a></li>
       <li><a href="https://github.com/ishaan575/DOCKER_/tree/main/Streamlit_App" target="_blank">Streamlit App</a></li>
       <li><a href="https://github.com/ishaan575/DOCKER_/tree/main/Django_App" target="_blank">Django Web Application</a></li>
       <li><a href="https://github.com/ishaan575/DOCKER_/tree/main/ML_FastAPI" target="_blank">ML Model with FastAPI</a></li>
-      <li><a href="https://github.com/ishaan575/DOCKER_/tree/main/Wordpress" target="_blank">WordPress Dockerized Setup</a></li>
+      <li><a href="https://github.com/ishaan575/DOCKER_/tree/main/Wordpress" target="_blank">WordPress Setup with Docker</a></li>
     </ul>
   </section>
 
   <section>
-    <h2>Connect with Me</h2>
+    <h2>🏆 Achievements & Leadership</h2>
     <ul>
-      <li><a href="https://github.com/ishaan575" target="_blank">GitHub: @ishaan575</a></li>
-      <li><a href="mailto:your.email@example.com">Email: your.email@example.com</a></li>
+      <li>Student Placement Representative - UPES</li>
+      <li>Elected Sports Captain - Army Public School</li>
+      <li>Group Lead - SRIJAN Social Internship</li>
+      <li>Core Committee Member - CSA Student Chapter</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📜 Certifications</h2>
+    <ul>
+      <li>AWS Academy Introduction to Cloud</li>
+      <li>AWS Academy Cloud Computing Architecture</li>
+      <li>AWS Academy Cloud Security Foundations</li>
+      <li>HackerRank Python</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📫 Connect With Me</h2>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/ishaan-patyal" target="_blank">LinkedIn</a></li>
+      <li><a href="https://github.com/ishaan575" target="_blank">GitHub</a></li>
+      <li><a href="https://leetcode.com/ishaan575" target="_blank">LeetCode</a></li>
     </ul>
   </section>
 
@@ -152,3 +173,4 @@
 
 </body>
 </html>
+
