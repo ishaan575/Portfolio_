@@ -1,55 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ishaan Patyal | Portfolio</title>
   <style>
+    :root {
+      --primary-color: #007bff;
+      --dark-bg: #1c1c1c;
+      --light-bg: #f4f4f4;
+      --text-color: #fff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
+      background: var(--light-bg);
       color: #333;
+      line-height: 1.6;
     }
 
     header {
-      background-color: #343a40;
-      color: white;
-      padding: 20px;
+      background: var(--dark-bg);
+      color: var(--text-color);
+      padding: 40px 20px;
       text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.2em;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.8;
     }
 
     section {
-      padding: 30px;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
+      padding: 40px 20px;
     }
 
-    h1, h2 {
+    h2 {
+      font-size: 1.8rem;
       margin-bottom: 10px;
+      border-left: 4px solid var(--primary-color);
+      padding-left: 10px;
     }
 
     ul {
-      list-style-type: disc;
-      padding-left: 20px;
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin: 10px 0;
     }
 
     a {
-      color: #007bff;
+      color: var(--primary-color);
       text-decoration: none;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.3s;
+    }
+
+    a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      background-color: var(--primary-color);
+      transition: width 0.3s;
     }
 
     a:hover {
-      text-decoration: underline;
+      color: #0056b3;
+    }
+
+    a:hover::after {
+      width: 100%;
     }
 
     footer {
-      background-color: #343a40;
-      color: white;
+      background: var(--dark-bg);
+      color: var(--text-color);
       text-align: center;
-      padding: 15px;
-      margin-top: 40px;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      section {
+        padding: 20px 15px;
+      }
     }
   </style>
 </head>
@@ -57,23 +114,27 @@
 
   <header>
     <h1>Ishaan Patyal</h1>
-    <p>DevOps & Cloud Enthusiast | Portfolio</p>
+    <p>DevOps & Cloud Enthusiast | Docker · AWS · FastAPI · CI/CD</p>
   </header>
 
   <section>
     <h2>About Me</h2>
-    <p>Hello! I'm Ishaan Patyal, a DevOps and Cloud practitioner working on containerized applications, cloud deployments, and automation pipelines using Docker, FastAPI, AWS, and more.</p>
+    <p>
+      I'm a passionate engineer focused on building scalable, cloud-native solutions.
+      I specialize in containerized deployments, infrastructure automation, and
+      modern DevOps pipelines.
+    </p>
   </section>
 
   <section>
     <h2>Docker Experiments</h2>
-    <p>Explore my hands-on projects using Docker and containerized technologies:</p>
+    <p>These are some hands-on projects using Docker and cloud-native tools:</p>
     <ul>
       <li><a href="https://github.com/ishaan575/DOCKER_" target="_blank">Main Docker Repository</a></li>
       <li><a href="https://github.com/ishaan575/DOCKER_/tree/main/Streamlit_App" target="_blank">Streamlit App</a></li>
       <li><a href="https://github.com/ishaan575/DOCKER_/tree/main/Django_App" target="_blank">Django Web Application</a></li>
-      <li><a href="https://github.com/ishaan575/DOCKER_/tree/main/ML_FastAPI" target="_blank">ML Model Serving with FastAPI</a></li>
-      <li><a href="https://github.com/ishaan575/DOCKER_/tree/main/Wordpress" target="_blank">WordPress Container Setup</a></li>
+      <li><a href="https://github.com/ishaan575/DOCKER_/tree/main/ML_FastAPI" target="_blank">ML Model with FastAPI</a></li>
+      <li><a href="https://github.com/ishaan575/DOCKER_/tree/main/Wordpress" target="_blank">WordPress Dockerized Setup</a></li>
     </ul>
   </section>
 
@@ -82,12 +143,11 @@
     <ul>
       <li><a href="https://github.com/ishaan575" target="_blank">GitHub: @ishaan575</a></li>
       <li><a href="mailto:your.email@example.com">Email: your.email@example.com</a></li>
-      <!-- Replace with your real email -->
     </ul>
   </section>
 
   <footer>
-    <p>© 2025 Ishaan Patyal. All rights reserved.</p>
+    <p>&copy; 2025 Ishaan Patyal. All rights reserved.</p>
   </footer>
 
 </body>
