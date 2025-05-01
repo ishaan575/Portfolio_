@@ -46,7 +46,7 @@ I’m a third-year Computer Science student at **UPES Dehradun** with a deep int
 - ✅ HackerRank Python (Certified)
 
 ---
-live at :  https://ishaan575.github.io/Portfolio_/
+live at :  http://ishaanpatyal-d47097681746090613045.s3-website.eu-north-1.amazonaws.com
 
 ## 📫 Connect With Me
 
@@ -56,6 +56,4 @@ live at :  https://ishaan575.github.io/Portfolio_/
 
 ---
 
-### 🚀 [Check Out My Live Portfolio Here](https://ishaan575.github.io/Portfolio_/)
 
-> _This portfolio is powered by HTML, CSS, and GitHub Pages._
