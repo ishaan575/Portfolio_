@@ -46,7 +46,7 @@ I’m a third-year Computer Science student at **UPES Dehradun** with a deep int
 - ✅ HackerRank Python (Certified)
 
 ---
-live at :  http://ishaanpatyal-d47097681746090613045.s3-website.eu-north-1.amazonaws.com
+live at :  http://ishaanpatyal-3167bb851746173858182.s3-website.eu-north-1.amazonaws.com
 
 ## 📫 Connect With Me
 
